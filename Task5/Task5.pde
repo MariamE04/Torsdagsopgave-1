@@ -3,9 +3,7 @@ void setup() {
   methodTwo(); 
 }
 
-/*
-  The following method has an error in it. Fix the error and run it. 
-*/
+//The following method has an error in it. Fix the error and run it. 
 
 void methodOne() {
   int i = 1000; // You are not allowed to change this line. 
@@ -17,7 +15,7 @@ void methodOne() {
     String output = "i is greater than "+max+".";   
     println(output);
   }
-}
+} 
 
 /* 
   Finish the following method so that we can change the number assigned 
@@ -29,15 +27,25 @@ void methodTwo() {
   
   if (weekDay < 5) {
     weekend = false;
-  }
+     }
   else 
   {
     weekend = true;
   }
-}
   
   // Print the name of the weekday here: 
+ if (weekDay == 0) {
+   println("det er mandag");
+ } else if (weekDay == 6) { 
+   println("det er søndag");
+ }
+    
+    
+// Print if it is weekend here:
+if (weekend == true){
+  println("det er søndag"); 
+} else {
+  println("det er ikke søndag");
+}
   
-    
-    
-  // Print if it is weekend here:
+}
